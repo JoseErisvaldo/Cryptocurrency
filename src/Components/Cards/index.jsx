@@ -19,7 +19,7 @@ function Cards() {
   }
 
   useEffect(() => {
-    
+    LoadingApi();
   }, []);
 
   useEffect(() => {
