@@ -1,0 +1,63 @@
+.container-crypto {
+}
+.cryptocard {
+  margin: 20px;
+  border: 1px solid rgba(71, 71, 71, 0.366);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.crypto-info {
+  margin-top: 20px;
+}
+
+.crypto-item {
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 21px;
+}
+
+.crypto-item span {
+  font-weight: bold;
+  text-align: start;
+}
+
+.crypto-item p,
+.crypto-item span {
+  width: 20%;
+  margin: 3px;
+  text-align: start;
+}
+
+.green {
+  color: #008000;
+}
+
+.red {
+  color: #ff0000;
+}
+.view-more {
+  color: rgb(171, 171, 171);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container-crypto {
+    width: 95%;
+  }
+  .cryptocard {
+    width: 80%;
+  }
+  .crypto-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
