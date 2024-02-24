@@ -1,0 +1,59 @@
+/* CSS no arquivo style.css */
+.container-custom {
+}
+
+.card-custom {
+  margin: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-custom {
+  margin-top: 20px;
+}
+
+.item-custom {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item-custom span {
+  font-weight: bold;
+  text-align: start;
+}
+
+.item-custom p,
+.item-custom span {
+  width: 20%;
+  margin: 3px;
+  text-align: start;
+}
+
+.green-text {
+  color: #008000;
+}
+
+.red-text {
+  color: #ff0000;
+}
+
+@media (max-width: 600px) {
+  .container-custom {
+    width: 100%;
+  }
+
+  .card-custom {
+    width: 280px;
+  }
+
+  .item-custom {
+    display: flex;
+    flex-direction: column;
+  }
+}

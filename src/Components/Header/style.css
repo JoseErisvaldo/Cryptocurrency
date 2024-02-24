@@ -29,6 +29,9 @@
   .container-nav-flex {
     display: flex;
   }
+  .card-toogle-toogle {
+    display: none;
+  }
 }
 
 @media (max-width: 570px) {
