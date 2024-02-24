@@ -21,6 +21,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 3px;
+  text-align: left;
 }
 
 .search {
