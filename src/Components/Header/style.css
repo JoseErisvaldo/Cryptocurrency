@@ -1,0 +1,60 @@
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.container-nav {
+  display: flex;
+  flex-direction: row;
+}
+.container-header li {
+  list-style: none;
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+.container-account {
+  display: flex;
+  font-size: 22px;
+}
+.card-toogle {
+  font-size: 22px;
+}
+
+@media (min-width: 570px) {
+  .card-toogle {
+    display: none;
+  }
+  .container-nav-flex {
+    display: flex;
+  }
+}
+
+@media (max-width: 570px) {
+  .container-nav {
+    position: absolute;
+    left: 10px;
+    top: -0px;
+    background-color: rgb(24, 26, 32);
+    height: 90%;
+    width: 95%;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .toogle {
+    font-size: 20px;
+    width: 80%;
+    margin: 1px;
+    text-align: center;
+  }
+  .card-toogle-toogle {
+    width: 90%;
+    font-size: 22px;
+  }
+  .container-nav-flex {
+    display: none;
+  }
+}
