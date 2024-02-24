@@ -1,0 +1,33 @@
+.card-home {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+}
+.title-card-home {
+  font-size: 60px;
+}
+.you-money {
+  text-align: start;
+}
+.you-money p {
+  display: flex;
+  align-items: center;
+}
+.you-money p span {
+  margin: 3px;
+}
+.dados-criptomoeda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dados-criptomoeda span {
+  margin: 5px;
+}
+.card-home-balance {
+  font-size: 45px;
+}
+.color-green {
+  color: green;
+}
