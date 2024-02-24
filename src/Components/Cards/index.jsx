@@ -5,13 +5,13 @@ import { IoSearch } from "react-icons/io5";
 
 function Cards() {
   const [search, setSearch] = useState('');
-  const [list, setList] = useState([]); // Inicializado como uma array vazia
-  const [apiData, setApiData] = useState([]);
+  const [list, setList] = useState([]);
+  const [apiData, setApiData] = useState([
+  ]);
 
   async function LoadingApi() {
     try {
       const response = await api.get('');
-      console.log(response.data);
       setApiData(response.data);
     } catch (error) {
       console.log(error);
@@ -46,7 +46,9 @@ function Cards() {
           <img src={data.image} alt={data.name} />
           <span>{data.name}</span>
           <span>{data.symbol.toUpperCase()}</span>
+          <span>Classificação da capitalização do mercado: {data.market_cap_rank}</span>
           <span>Preço Atual: ${data.current_price}</span>
+          <span>% de alteração no preço 24H: <span  className={data.price_change_percentage_24h > 0 ? 'color-green' : 'color-red'}>{data.price_change_percentage_24h.toFixed(1)}% </span></span>
           <span>Capitalização de Mercado: ${data.market_cap}</span>
           <span>Volume Total nas Últimas 24 horas: ${data.total_volume}</span>
         </div>

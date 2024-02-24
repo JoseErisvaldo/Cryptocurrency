@@ -41,6 +41,12 @@
   color: rgb(255, 255, 255);
   border-radius: 20px;
 }
+.color-red {
+  color: red;
+}
+.color-green {
+  color: rgb(0, 247, 0);
+}
 
 @media (max-width: 850px) {
   .crypto-card {
