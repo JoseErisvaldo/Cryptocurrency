@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.css'
-import Cards from '../../Components/Cards';
+import CardHome from '../../Components/CardHome';
+import Cards from '../../Components/Card';
 
 function Home () {
   return (
     <div className="container-home">
-      <h1>Cryptocurrency</h1>
-      <h3>Esteja atualizado com as top 100 criptomoedas</h3>
+      <CardHome/>
       <Cards/>
     </div>
   );
