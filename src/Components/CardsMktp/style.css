@@ -1,0 +1,48 @@
+.container-crypto-table {
+  overflow-x: scroll;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-crypto-table::-webkit-scrollbar {
+  background-color: rgb(24, 26, 32);
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.crypto-table {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  color: #fff;
+}
+
+.link {
+  text-decoration: none;
+}
+.color-red {
+  color: red;
+}
+
+@media (max-width: 800px) {
+  .container-crypto-table {
+    display: block;
+  }
+}
