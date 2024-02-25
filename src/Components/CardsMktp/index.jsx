@@ -37,6 +37,8 @@ function CardsMktp() {
     }
   }
 
+
+
   return (
     <>
     <div className='container-crypto-table'>
@@ -48,6 +50,7 @@ function CardsMktp() {
       <table className="crypto-table">
         <thead>
           <tr>
+            <th>Foto</th>
             <th>Nome</th>
             <th>Símbolo</th>
             <th>Rank da Capi. Mercado</th>
@@ -59,10 +62,11 @@ function CardsMktp() {
           </tr>
         </thead>
         <tbody>
-          {Link.length > 0 ? 
+          {list.length > 0 ? 
           <>
           {list.map((data) => (
             <tr key={data.symbol}>
+              <td className='img-mktp'><img src={data.image}/></td>
               <td>{data.name}</td>
               <td>{data.symbol.toUpperCase()}</td>
               <td>{data.market_cap_rank}</td>

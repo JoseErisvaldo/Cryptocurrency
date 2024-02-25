@@ -34,6 +34,10 @@ th {
   color: #fff;
 }
 
+.img-mktp img {
+  width: 25px;
+}
+
 .link {
   text-decoration: none;
 }
